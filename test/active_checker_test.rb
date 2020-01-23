@@ -1,4 +1,4 @@
-require 'test_helper'
+require "../active_checker.gem"
 
 class ActiveChecker::Test < ActiveSupport::TestCase
   test "truth" do

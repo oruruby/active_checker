@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    active_checker (0.1.120)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  active_checker!
+
+BUNDLED WITH
+   2.1.2
