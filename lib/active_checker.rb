@@ -1,5 +1,3 @@
-require "active_checker/railtie"
-
 module ActiveChecker
   module Model
     def check param
