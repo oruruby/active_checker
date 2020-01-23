@@ -3,11 +3,11 @@ require "active_checker/railtie"
 module ActiveChecker
   module Model
     def check param
-      check_data = checker.send("#{param}")
-      if check_data[:checker].call(self)
+      check_data = instance_checker.send("#{param}")
+      if instance_checker.checker.call(self)
         true
       else
-        check_data[:handler].call(self)
+        instance_checker.handler.call(self)
         false
       end
     end
@@ -15,12 +15,18 @@ module ActiveChecker
     private
 
     def checker
-      @checker ||= "#{self.class.name}Checker".constantize.new
+      @checker ||= "#{self.class.name}Checker".constantize
+    end
+
+    def instance_checker
+      @instance_checker = checker.new
     end
   end
 
   class Base
-      
+
+    attr_accessor :checker, :handler
+
   end
 
 end
