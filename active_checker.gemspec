@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version     = ActiveChecker::VERSION
   spec.authors     = ["oruruby"]
   spec.email       = ["d.vishnevskiy@outlook.com"]
-  spec.homepage    = ""
+  spec.homepage    = "https://github.com/oruruby/active_check"
   spec.summary     = "Callable validations with failure processing"
   spec.description = "Architectural feature, that delegate resource verification to another abstract entity called 'Checker', and provide light interface to working with them"
   spec.license     = "MIT"
