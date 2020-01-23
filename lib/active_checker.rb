@@ -19,8 +19,8 @@ module ActiveChecker
     end
   end
 
-  module Base
-    
+  class Base
+      
   end
 
 end
