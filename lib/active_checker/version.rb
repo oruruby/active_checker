@@ -1,3 +1,3 @@
 module ActiveChecker
-  VERSION = '0.1.520'
+  VERSION = '0.1.620'
 end
